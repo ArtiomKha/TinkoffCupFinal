@@ -28,10 +28,11 @@ public class TinkoffLeftIconCardView: UIView {
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.contentMode = .scaleAspectFit
 		view.image = UIImage(named: "closeIcon")
+		view.isHidden = true
 		return view
 	}()
 
-	public final var isCancellModeEnabled = true {
+	public final var isCancellModeEnabled = false {
 		didSet {
 			cancelIconView.isHidden = !isCancellModeEnabled
 		}

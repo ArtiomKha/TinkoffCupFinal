@@ -107,4 +107,10 @@ public struct ItemModel {
 	let image: UIImage?
 	let title: String?
 	let subtitle: String?
+
+	public init(image: UIImage?, title: String?, subtitle: String?) {
+		self.image = image
+		self.title = title
+		self.subtitle = subtitle
+	}
 }

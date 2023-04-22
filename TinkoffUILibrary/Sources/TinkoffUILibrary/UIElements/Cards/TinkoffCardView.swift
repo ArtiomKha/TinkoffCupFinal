@@ -142,7 +142,7 @@ public class TinkoffCardView: UIView {
 		}
 	}
 
-	func set(item: ItemModel) {
+	public func set(item: ItemModel) {
 		imageView.image = item.image
 		subheaderLabel.text = item.subtitle
 		headerLabel.text = item.title

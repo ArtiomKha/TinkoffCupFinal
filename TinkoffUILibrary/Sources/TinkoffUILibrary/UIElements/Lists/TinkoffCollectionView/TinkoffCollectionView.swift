@@ -14,6 +14,7 @@ public class TinkoffCollectionView: UIView {
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.layer.masksToBounds = true
 		view.layer.cornerRadius = 24
+		view.backgroundColor = .white
 		return view
 	}()
 
