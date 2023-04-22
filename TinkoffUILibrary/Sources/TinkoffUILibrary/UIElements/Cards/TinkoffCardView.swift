@@ -77,7 +77,6 @@ class TinkoffCardView: UIView {
 		let view = UIImageView()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.contentMode = .scaleAspectFit
-		view.image = UIImage(named: "tui-avatar")
 		return view
 	}()
 
