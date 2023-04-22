@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol TinkoffCardViewDelegate: AnyObject {
+public protocol TinkoffCardViewDelegate: AnyObject {
 	func didTapCTAButton()
 	func didtapCloseButton()
 }
 
-extension TinkoffCardViewDelegate {
+public extension TinkoffCardViewDelegate {
 	func didTapCTAButton() { }
 	func didtapCloseButton() { }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffListHeaderView: UIView {
+public class TinkoffListHeaderView: UIView {
 	internal let headerStackView: UIStackView = {
 		let stackView = UIStackView()
 		stackView.axis = .horizontal

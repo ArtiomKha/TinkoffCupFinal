@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffLeftIconCardView: UIView {
+public class TinkoffLeftIconCardView: UIView {
 
 	private let contentView: UIView = {
 		let view = UIView()
@@ -98,7 +98,7 @@ class TinkoffLeftIconCardView: UIView {
 		delegate?.didtapCloseButton()
 	}
 
-	override func layoutSubviews() {
+	public override func layoutSubviews() {
 		super.layoutSubviews()
 		if style.isShadowVisible {
 			dropShadow(color: .black, opacity: 0.12, offSet: .init(width: 0, height: 6), radius: 8)

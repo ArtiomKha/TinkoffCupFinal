@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffCardView: UIView {
+public class TinkoffCardView: UIView {
 
 	private let contentView: UIView = {
 		let view = UIView()
@@ -133,7 +133,7 @@ class TinkoffCardView: UIView {
 		contentView.backgroundColor = style.backgroudColor
 	}
 
-	override func layoutSubviews() {
+	public override func layoutSubviews() {
 		super.layoutSubviews()
 		if style.isShadowVisible {
 			dropShadow(color: .black, opacity: 0.12, offSet: .init(width: 0, height: 6), radius: 8)

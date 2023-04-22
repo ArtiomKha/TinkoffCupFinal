@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum TinkoffViewStyle {
+public enum TinkoffViewStyle {
 	case white
 	case grey
 

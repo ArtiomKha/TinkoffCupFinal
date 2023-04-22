@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffLeftIconItemView: UIView {
+public class TinkoffLeftIconItemView: UIView {
 
 	internal let stackView: UIStackView = {
 		let stackView = UIStackView()
@@ -103,7 +103,7 @@ class TinkoffLeftIconItemView: UIView {
 	}
 }
 
-struct ItemModel {
+public struct ItemModel {
 	let image: UIImage?
 	let title: String?
 	let subtitle: String?

@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TinkoffButton: UIButton {
+public class TinkoffButton: UIButton {
 
-	override var isHighlighted: Bool {
+	public override var isHighlighted: Bool {
 		didSet {
 			backgroundColor = isHighlighted ? Colors.CTAButton.highlightedBackground : Colors.CTAButton.background
 		}

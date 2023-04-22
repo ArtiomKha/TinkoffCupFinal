@@ -8,12 +8,12 @@
 import UIKit
 
 
-protocol TinkoffCollectionViewDelegate: AnyObject {
+public protocol TinkoffCollectionViewDelegate: AnyObject {
 	func didSelectItem(at index: Int)
 	func didTapBarButton()
 	func didTapCTAButton()
 }
 
-extension TinkoffCollectionViewDelegate {
+public extension TinkoffCollectionViewDelegate {
 	func didTapCTAButton() { }
 }

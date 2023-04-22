@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffListButtonView: TinkoffListView {
+public class TinkoffListButtonView: TinkoffListView {
 
 	public var buttonTitle: String? {
 		didSet {

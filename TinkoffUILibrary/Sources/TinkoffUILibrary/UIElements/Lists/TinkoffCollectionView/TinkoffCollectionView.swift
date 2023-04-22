@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffCollectionView: UIView {
+public class TinkoffCollectionView: UIView {
 
 	private let contentView: UIView = {
 		let view = UIView()
@@ -118,7 +118,7 @@ class TinkoffCollectionView: UIView {
 		delegate?.didTapBarButton()
 	}
 
-	override func layoutSubviews() {
+	public override func layoutSubviews() {
 		super.layoutSubviews()
 		dropShadow(color: .black, opacity: 0.12, offSet: .init(width: 0, height: 6), radius: 8)
 	}
@@ -126,11 +126,11 @@ class TinkoffCollectionView: UIView {
 
 extension TinkoffCollectionView: UICollectionViewDataSource {
 
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+	public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		dataSource.count
 	}
 
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+	public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TinkoffCollectionViewCell.identifier, for: indexPath) as? TinkoffCollectionViewCell else {
 			return UICollectionViewCell()
 		}
@@ -142,17 +142,17 @@ extension TinkoffCollectionView: UICollectionViewDataSource {
 }
 
 extension TinkoffCollectionView: UICollectionViewDelegate {
-	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+	public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		delegate?.didSelectItem(at: indexPath.row)
 	}
 }
 
 extension TinkoffCollectionView: UICollectionViewDelegateFlowLayout {
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return CGSize(width: 140, height: 140)
 	}
 
-	func collectionView(_ collectionView: UICollectionView,
+	public func collectionView(_ collectionView: UICollectionView,
 						layout collectionViewLayout: UICollectionViewLayout,
 						minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
 			return 12

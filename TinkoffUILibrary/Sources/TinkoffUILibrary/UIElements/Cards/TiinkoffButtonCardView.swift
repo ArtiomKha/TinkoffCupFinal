@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TiinkoffButtonCardView: TinkoffCardView {
+public class TiinkoffButtonCardView: TinkoffCardView {
 
 	public var buttonTitle: String? {
 		didSet {

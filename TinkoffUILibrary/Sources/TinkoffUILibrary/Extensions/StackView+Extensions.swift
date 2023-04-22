@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UIStackView {
-
-	func removeAllArrangedSubviews() -> [UIView] {
+public extension UIStackView {
+	
+	public func removeAllArrangedSubviews() -> [UIView] {
 		let removedSubviews = arrangedSubviews.reduce([]) { (removedSubviews, subview) -> [UIView] in
 			self.removeArrangedSubview(subview)
 			NSLayoutConstraint.deactivate(subview.constraints)
@@ -27,7 +27,7 @@ extension UIStackView {
 		return view
 	}
 
-	func addArrangedSpacerView(axis: NSLayoutConstraint.Axis = .horizontal) -> UIView {
+	public func addArrangedSpacerView(axis: NSLayoutConstraint.Axis = .horizontal) -> UIView {
 		let spacerView = createSpacerView(axis: axis)
 		addArrangedSubview(spacerView)
 		return spacerView

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffListView: UIView {
+public class TinkoffListView: UIView {
 
 	private let contentView: UIView = {
 		let view = UIView()
@@ -130,7 +130,7 @@ class TinkoffListView: UIView {
 		}
 	}
 
-	override func layoutSubviews() {
+	public override func layoutSubviews() {
 		super.layoutSubviews()
 		if style.isShadowVisible {
 			dropShadow(color: .black, opacity: 0.12, offSet: .init(width: 0, height: 6), radius: 8)

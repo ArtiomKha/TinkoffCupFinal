@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TinkoffCollectionViewCell: UICollectionViewCell {
+public class TinkoffCollectionViewCell: UICollectionViewCell {
 
 	static let identifier = "TinkoffCollectionViewCell"
 

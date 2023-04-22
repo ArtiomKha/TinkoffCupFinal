@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol TinkoffListViewDelegate: AnyObject {
+public protocol TinkoffListViewDelegate: AnyObject {
 	func didSelectItem(at index: Int)
 	func didTapBarButton()
 	func didTapCTAButton()
 }
 
-extension TinkoffListViewDelegate {
+public extension TinkoffListViewDelegate {
 	func didTapCTAButton() { }
 }
