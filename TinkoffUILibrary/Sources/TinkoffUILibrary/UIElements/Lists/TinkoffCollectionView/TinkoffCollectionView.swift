@@ -65,6 +65,12 @@ public class TinkoffCollectionView: UIView {
 		}
 	}
 
+	public var headerButtonTitle: String? {
+		didSet {
+			headerView.topButton.setTitle(headerButtonTitle, for: .normal)
+		}
+	}
+
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		setup()

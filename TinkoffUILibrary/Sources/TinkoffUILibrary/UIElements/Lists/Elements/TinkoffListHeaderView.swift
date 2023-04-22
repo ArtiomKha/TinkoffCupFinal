@@ -23,7 +23,7 @@ public class TinkoffListHeaderView: UIView {
 		label.numberOfLines = 1
 		label.font = Fonts.List.header
 		label.textColor = Colors.List.header
-		label.setContentHuggingPriority(.init(200), for: .vertical)
+		label.setContentHuggingPriority(.init(1), for: .horizontal)
 		label.textAlignment = .left
 		label.text = "Header"
 		return label
@@ -34,6 +34,7 @@ public class TinkoffListHeaderView: UIView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setTitleColor(Colors.primary, for: .normal)
 		button.setTitle("Button", for: .normal)
+		button.setContentCompressionResistancePriority(.init(999), for: .horizontal)
 		return button
 	}()
 

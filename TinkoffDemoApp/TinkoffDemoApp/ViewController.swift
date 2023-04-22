@@ -33,6 +33,7 @@ class ViewController: UIViewController {
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.headerTitle = "Header"
 		view.dataSource = Array(repeating: ItemModel(image: UIImage(named: "tui-avatar"), title: "Title", subtitle: "Subtitle"), count: 5)
+		view.headerButtonTitle = "Button"
 		return view
 	}()
 
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
 		view.headerTitle = "Header"
 		view.buttonTitle = "Button"
 		view.dataSource = Array(repeating: ItemModel(image: UIImage(named: "tui-avatar"), title: "Title", subtitle: "Subtitle"), count: 5)
+		view.headerButtonTitle = "Button"
 		return view
 	}()
 
@@ -51,7 +53,7 @@ class ViewController: UIViewController {
 		view.style = .white
 		view.headerTitle = "Header"
 		view.dataSource = Array(repeating: ItemModel(image: UIImage(named: "tui-avatar"), title: "Title", subtitle: "Subtitle"), count: 5)
-		
+		view.headerButtonTitle = "Button"
 		return view
 	}()
 
@@ -61,7 +63,7 @@ class ViewController: UIViewController {
 		view.style = .grey
 		view.headerTitle = "Header"
 		view.dataSource = Array(repeating: ItemModel(image: UIImage(named: "tui-avatar"), title: "Title", subtitle: "Subtitle"), count: 5)
-		
+		view.headerButtonTitle = "Button"
 		return view
 	}()
 
@@ -71,7 +73,7 @@ class ViewController: UIViewController {
 		view.style = .white
 		view.headerTitle = "Header"
 		view.dataSource = Array(repeating: ItemModel(image: UIImage(named: "tui-avatar"), title: "Title", subtitle: "Subtitle"), count: 5)
-		
+		view.headerButtonTitle = "Button"
 		return view
 	}()
 
@@ -79,9 +81,9 @@ class ViewController: UIViewController {
 		let view = TinkoffListButtonView()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.style = .grey
-		view.headerTitle = "Header"
+		view.headerTitle = "Very long header"
 		view.dataSource = Array(repeating: ItemModel(image: UIImage(named: "tui-avatar"), title: "Title", subtitle: "Subtitle"), count: 5)
-		
+		view.headerButtonTitle = "Button Button Button"
 		return view
 	}()
 

@@ -65,6 +65,12 @@ public class TinkoffListView: UIView {
 		}
 	}
 
+	public var headerButtonTitle: String? {
+		didSet {
+			headerView.topButton.setTitle(headerButtonTitle, for: .normal)
+		}
+	}
+
 	public weak var delegate: TinkoffListViewDelegate?
 
 	override init(frame: CGRect) {
