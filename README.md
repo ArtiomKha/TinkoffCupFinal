@@ -7,7 +7,7 @@ I took a 3 place on that cup. On **master** branch you can find a solution that 
 
 ## Task 
 Develop design system for the following design:
-           Card            |  Vertical List            |  Horizonta/ List
+           Card            |  Vertical List            |  Horizontal List
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](resources/cards.png)   |  ![](resources/vlists.png)|  ![](resources/hlists.png)
 
